@@ -1413,3 +1413,42 @@
 14:07:55.284 [main] INFO  testCases.TC001_AccountRegisterationTest - ******* Finished TC001_AccountRegisterationTest *******
 14:07:59.101 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC002_LoginTest ********
 14:08:00.226 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC002_LoginTest ********
+18:10:39.708 [main] INFO  testCases.TC001_AccountRegisterationTest - ***** Starting TC001_AccountRegisterationTest *****
+18:10:39.918 [main] INFO  testCases.TC001_AccountRegisterationTest - ****** Clicked on MyAccount Link *******
+18:10:41.202 [main] INFO  testCases.TC001_AccountRegisterationTest - ****** Clicked on Register Link *******
+18:10:41.205 [main] INFO  testCases.TC001_AccountRegisterationTest - ****** Providing Customer Details *******
+18:10:43.516 [main] INFO  testCases.TC001_AccountRegisterationTest - ****** Validating Expected Message *******
+18:10:43.589 [main] INFO  testCases.TC001_AccountRegisterationTest - ******* Finished TC001_AccountRegisterationTest *******
+18:10:51.454 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC002_LoginTest ********
+18:10:53.557 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC002_LoginTest ********
+18:13:15.824 [main] INFO  testCases.TC001_AccountRegisterationTest - ***** Starting TC001_AccountRegisterationTest *****
+18:13:16.259 [main] INFO  testCases.TC001_AccountRegisterationTest - ****** Clicked on MyAccount Link *******
+18:13:17.276 [main] INFO  testCases.TC001_AccountRegisterationTest - ****** Clicked on Register Link *******
+18:13:17.276 [main] INFO  testCases.TC001_AccountRegisterationTest - ****** Providing Customer Details *******
+18:13:19.196 [main] INFO  testCases.TC001_AccountRegisterationTest - ****** Validating Expected Message *******
+18:13:19.293 [main] INFO  testCases.TC001_AccountRegisterationTest - ******* Finished TC001_AccountRegisterationTest *******
+18:13:25.300 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC002_LoginTest ********
+18:13:27.326 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC002_LoginTest ********
+17:36:08.569 [main] INFO  testCases.TC004_SearchProductTest - Starting TC004_SearchProductTest
+17:37:21.844 [main] INFO  testCases.TC004_SearchProductTest - Starting TC004_SearchProductTest
+17:39:55.885 [main] INFO  testCases.TC004_SearchProductTest - Starting TC004_SearchProductTest
+17:41:06.296 [main] INFO  testCases.TC004_SearchProductTest - Starting TC004_SearchProductTest
+17:41:10.091 [main] INFO  testCases.TC004_SearchProductTest - Finished TC004_SearchProductTest
+17:44:46.995 [main] INFO  testCases.TC004_SearchProductTest - Starting TC004_SearchProductTest
+17:44:50.715 [main] INFO  testCases.TC004_SearchProductTest - Finished TC004_SearchProductTest
+17:46:46.334 [main] INFO  testCases.TC004_SearchProductTest - Starting TC004_SearchProductTest
+17:46:49.941 [main] INFO  testCases.TC004_SearchProductTest - Finished TC004_SearchProductTest
+17:47:45.772 [main] INFO  testCases.TC004_SearchProductTest - Starting TC004_SearchProductTest
+17:47:49.580 [main] INFO  testCases.TC004_SearchProductTest - Finished TC004_SearchProductTest
+20:23:46.462 [main] INFO  testCases.TC005_AddToCartPageTest - Starting TC005_AddToCartPageTest
+20:23:51.028 [main] INFO  testCases.TC005_AddToCartPageTest - Finished TC005_AddToCartPageTest
+20:30:19.644 [main] INFO  testCases.TC005_AddToCartPageTest - Starting TC005_AddToCartPageTest
+20:31:25.560 [main] INFO  testCases.TC005_AddToCartPageTest - Starting TC005_AddToCartPageTest
+20:33:00.298 [main] INFO  testCases.TC005_AddToCartPageTest - Starting TC005_AddToCartPageTest
+20:35:28.924 [main] INFO  testCases.TC005_AddToCartPageTest - Starting TC005_AddToCartPageTest
+20:39:09.257 [main] INFO  testCases.TC005_AddToCartPageTest - Starting TC005_AddToCartPageTest
+20:46:29.806 [main] INFO  testCases.TC005_AddToCartPageTest - Starting TC005_AddToCartPageTest
+20:48:04.068 [main] INFO  testCases.TC005_AddToCartPageTest - Starting TC005_AddToCartPageTest
+20:49:25.081 [main] INFO  testCases.TC005_AddToCartPageTest - Starting TC005_AddToCartPageTest
+20:50:34.918 [main] INFO  testCases.TC005_AddToCartPageTest - Starting TC005_AddToCartPageTest
+20:50:40.143 [main] INFO  testCases.TC005_AddToCartPageTest - Finished TC005_AddToCartPageTest

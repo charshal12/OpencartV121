@@ -2,15 +2,15 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-21T20:50:30 IST" name="Master Suite" finished-at="2024-09-21T20:50:40 IST" duration-ms="9796">
+  <suite started-at="2024-09-27T15:46:43 IST" name="Master Suite" finished-at="2024-09-27T15:47:16 IST" duration-ms="32373">
     <groups>
       <group name="Master">
-        <method signature="TC005_AddToCartPageTest.verify_productSearch()[pri:0, instance:testCases.TC005_AddToCartPageTest@28f3b248]" name="verify_productSearch" class="testCases.TC005_AddToCartPageTest"/>
+        <method signature="TC006_EndToEndTest.endToendTest()[pri:0, instance:testCases.TC006_EndToEndTest@32b260fa]" name="endToendTest" class="testCases.TC006_EndToEndTest"/>
       </group> <!-- Master -->
     </groups>
-    <test started-at="2024-09-21T20:50:30 IST" name="Test" finished-at="2024-09-21T20:50:40 IST" duration-ms="9796">
-      <class name="testCases.TC005_AddToCartPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC005_AddToCartPageTest@28f3b248]" started-at="2024-09-21T20:50:30 IST" name="setUp" finished-at="2024-09-21T20:50:34 IST" duration-ms="4043" status="PASS">
+    <test started-at="2024-09-27T15:46:43 IST" name="Test" finished-at="2024-09-27T15:47:16 IST" duration-ms="32373">
+      <class name="testCases.TC006_EndToEndTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC006_EndToEndTest@32b260fa]" started-at="2024-09-27T15:46:44 IST" name="setUp" finished-at="2024-09-27T15:46:49 IST" duration-ms="4678" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_productSearch()[pri:0, instance:testCases.TC005_AddToCartPageTest@28f3b248]" started-at="2024-09-21T20:50:34 IST" name="verify_productSearch" finished-at="2024-09-21T20:50:40 IST" duration-ms="5233" status="PASS">
+        <test-method signature="endToendTest()[pri:0, instance:testCases.TC006_EndToEndTest@32b260fa]" started-at="2024-09-27T15:46:49 IST" name="endToendTest" finished-at="2024-09-27T15:47:16 IST" duration-ms="27226" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_productSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC005_AddToCartPageTest@28f3b248]" started-at="2024-09-21T20:50:40 IST" name="tearDown" finished-at="2024-09-21T20:50:40 IST" duration-ms="191" status="PASS">
+        </test-method> <!-- endToendTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC006_EndToEndTest@32b260fa]" started-at="2024-09-27T15:47:16 IST" name="tearDown" finished-at="2024-09-27T15:47:16 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC005_AddToCartPageTest -->
+      </class> <!-- testCases.TC006_EndToEndTest -->
     </test> <!-- Test -->
   </suite> <!-- Master Suite -->
 </testng-results>

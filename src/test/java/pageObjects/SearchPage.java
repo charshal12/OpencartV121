@@ -14,6 +14,7 @@ public class SearchPage extends BasePage {
 
     public SearchPage(WebDriver driver) {
         super(driver);
+        this.productName=productName;
     }
 
     @FindBy(xpath = "//div[@class='row']//h4")
@@ -117,7 +118,7 @@ public class SearchPage extends BasePage {
     }
 
 
-    public boolean checkConfMsg() {
+    public boolean checkConfMsg(String productName) {
         try{ //This logic is to remove the close sign from the message while we fetch the message through webelement
             String message = confirmMsg.getText();
             String[] messageDisplayedArr = message.split("!");

@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,63 +9,14 @@ import java.util.Objects;
 
 public class Product extends BasePage {
 
-    private String productNameXpath;
-    private Double productPriceXpath;
-    private int productQuantityXpath;
-    private String addToCartBtnXpath;
-
-    //MacBook WebElements
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[1]//h4/a[@href]")
-    WebElement productMacBookBtn;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[1]//p[@class='price'][contains(text(),'$')]")
-    WebElement priceMacBook;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[1]//div[3]/button[1]/span[contains(text(),'Add to Cart')]")
-    WebElement addToCartMacBookBtn;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[1]/div/div[3]/button[2]")
-    WebElement addToWishListtMacBookBtn;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[1]/div/div[3]/button[3]")
-    WebElement compareMacBookBtn;
-
-    //iPhone WebElements
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[2]//h4/a[@href]")
-    WebElement productiPhoneBtn;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[2]//p[@class='price'][contains(text(),'$')]")
-    WebElement priceiPhone;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[2]//div[3]/button[1]/span[contains(text(),'Add to Cart')]")
-    WebElement addToCartiPhoneBtn;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[2]/div/div[3]/button[2]")
-    WebElement addToWishListtiPhoneBtn;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[2]/div/div[3]/button[3]")
-    WebElement compareiPhoneBtn;
+    private WebElement productNameXpath;
+    private WebElement productPriceXpath;
+    private WebElement productQuantityXpath;
+    private WebElement addToCartBtnXpath;
+    private int count =0;
 
 
-    //AppleCinema WebElements
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[3]//h4/a[@href]")
-    WebElement productAppleCinemaBtn;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[3]//p[@class='price'][contains(text(),'$')]")
-    WebElement priceAppleCinema;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[3]//div[3]/button[1]/span[contains(text(),'Add to Cart')]")
-    WebElement addToCartAppleCinemaBtn;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[3]/div/div[3]/button[2]")
-    WebElement addToWishListtAppleCinemaBtn;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[3]/div/div[3]/button[3]")
-    WebElement compareAppleCinemaBtn;
-
-
-    //CanonEQS WebElements
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[4]//h4/a[@href]")
-    WebElement productCanonEQSBtn;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[4]//p[@class='price'][contains(text(),'$')]")
-    WebElement priceCanonEQS;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[4]//div[3]/button[1]/span[contains(text(),'Add to Cart')]")
-    WebElement addToCartCanonEQSBtn;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[4]/div/div[3]/button[2]")
-    WebElement addToWishListtCanonEQSBtn;
-    @FindBy(xpath = "//*[@id='content']/div[2]/div[4]/div/div[3]/button[3]")
-    WebElement compareCanonEQSBtn;
-
-
-    public Product(WebDriver driver, String productNameXpath, Double productPriceXpath, int productQuantityXpath, String addToCartBtnXpath) {
+    public Product(WebDriver driver, WebElement productNameXpath, WebElement productPriceXpath,WebElement productQuantityXpath, WebElement addToCartBtnXpath) {
         super(driver);
         this.productNameXpath = productNameXpath;
         this.productPriceXpath = productPriceXpath;
@@ -72,34 +24,34 @@ public class Product extends BasePage {
         this.addToCartBtnXpath =addToCartBtnXpath;
     }
 
-    public void setProductNameXpath(String productNameXpath) {
+    public void setProductNameXpath(WebElement productNameXpath) {
         this.productNameXpath = productNameXpath;
     }
 
-    public void setProductPriceXpath(Double productPriceXpath) {
+    public void setProductPriceXpath(WebElement productPriceXpath) {
         this.productPriceXpath = productPriceXpath;
     }
 
-    public void setProductQuantityXpath(int productQuantityXpath) {
+    public void setProductQuantityXpath(WebElement productQuantityXpath) {
         this.productQuantityXpath = productQuantityXpath;
     }
 
-    public void setAddToCartBtnXpath(String addToCartBtnXpath) {
+    public void setAddToCartBtnXpath(WebElement addToCartBtnXpath) {
         this.addToCartBtnXpath = addToCartBtnXpath;
     }
 
-    public String getProductNameXpath() {
+    public WebElement getProductNameXpath() {
         return productNameXpath;
     }
 
-    public Double getProductPriceXpath() {
+    public WebElement getProductPriceXpath() {
         return productPriceXpath;
     }
-    public String getAddToCartBtnXpath() {
+    public WebElement getAddToCartBtnXpath() {
         return addToCartBtnXpath;
     }
 
-    public int getProductQuantityXpath() {
+    public WebElement getProductQuantityXpath() {
         return productQuantityXpath;
     }
 
@@ -125,4 +77,23 @@ public class Product extends BasePage {
         return Objects.hashCode(productNameXpath);
     }
 
+  public String getNameOfProduct(){
+        return this.productNameXpath.getText();
+  }
+
+    public String getPriceOfProduct(){
+        return this.productPriceXpath.getText();
+    }
+
+    public void clickOnAddToCart(){
+        this.addToCartBtnXpath.click();
+        this.count++;
+    }
+
+    public int getCountOfProduct(){
+        return this.count;
+    }
+
+
 }
+

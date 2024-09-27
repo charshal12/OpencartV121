@@ -120,7 +120,7 @@ public class BaseClass {
 
     @AfterClass(groups = {"Sanity","Regression","Master","DataDriven"})
     public void tearDown(){
-        driver.close();
+        /*driver.close();*/
     }
 
     public String randomString(){

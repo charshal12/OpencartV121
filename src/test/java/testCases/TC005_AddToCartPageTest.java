@@ -24,7 +24,7 @@ public class TC005_AddToCartPageTest extends BaseClass {
                 sp.setQuantity("2");
                 sp.addToCart();
             }
-            Assert.assertEquals(sp.checkConfMsg(),true);
+            Assert.assertEquals(sp.checkConfMsg("searchProductName"),true);
         } catch (Exception e) {
             Assert.fail();
         }

@@ -62,12 +62,12 @@ public class TC006_EndToEndTest extends BaseClass {
         SearchPage sp = new SearchPage(driver);
         if (sp.isProductExist(p.getProperty("searchProductName"))){
             sp.selectProduct(p.getProperty("searchProductName"));
-            sp.setQuantity("1");
-            sp.addToCartSearchPage("searchProductName");
+         //   sp.setQuantity("1");
+            sp.addToCartSearchPage(p.getProperty("searchProductName"));
         }
         Thread.sleep(3000);
-        System.out.println("Added product to the cart ? "+ sp.checkConfMsg());
-        myassert.assertEquals(sp.checkConfMsg(),true);
+        System.out.println("Added product to the cart ? "+ sp.checkConfMsg(p.getProperty("searchProductName")));
+        myassert.assertEquals(sp.checkConfMsg(p.getProperty("searchProductName")),true);
 
         //Shopping cart
         System.out.println("Shopping cart .................");
@@ -82,7 +82,9 @@ public class TC006_EndToEndTest extends BaseClass {
         shoppingCartPage.clickOnCheckout();
         Thread.sleep(3000);
 
-
+        //Checkout Page
+       /* System.out.println("Checkout Page.......");
+        CheckoutPage ch = new CheckoutPage(driver);*/
 
 
     }
